@@ -3,241 +3,200 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pisicile - Prietenii Noștri Blănoși</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <meta name="description" content="Află totul despre pisici, rolul lor în familie, rasele cele mai populare, alimentația și îngrijirea acestora.">
+    <meta name="keywords" content="pisici, îngrijirea pisicilor, rase pisici, alimentație pisici, sănătate pisici">
+    <title>Pisici - Tot ce Trebuie Să Știi</title>
     <style>
-        body {
-            font-family: 'Poppins', sans-serif;
+        /* Reset CSS */
+        * {
             margin: 0;
             padding: 0;
-            background-color: #f9e9f4;
-            background-image: url('https://cdn.pixabay.com/photo/2017/08/30/02/01/kitty-2690425_960_720.jpg');
-            background-size: cover;
-            background-position: center;
-            color: #5a265f;
+            box-sizing: border-box;
         }
-
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f7f3f9;
+            color: #333;
+            padding-top: 80px; /* Spațiu pentru meniul fixat */
+        }
+        h1, h2, h3 {
+            color: #7a1f70;
+        }
+        section {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 3em;
+            margin: 2em 0;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
         header {
-            background-color: #f2d6eb;
-            text-align: center;
-            padding: 3em 0;
-            border-bottom: 4px solid #e0b7d6;
-        }
-
-        h1 {
-            color: #8a2e8e;
-            font-size: 3rem;
-            margin: 0;
-            animation: fadeIn 2s ease-in-out;
-        }
-
-        nav {
-            position: sticky;
+            position: fixed;
             top: 0;
             left: 0;
-            width: 100%;
-            background-color: #e7c4e1;
-            padding: 1em 0;
+            right: 0;
+            background-color: #f8c7d5;
+            padding: 15px 0;
             z-index: 1000;
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
-
-        .nav-links {
+        .logo {
+            font-size: 1.8em;
+            color: #7a1f70;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        nav {
             display: flex;
-            justify-content: center;
-            width: 100%;
+            gap: 1em;
         }
-
         nav a {
-            color: #5a265f;
-            font-size: 1.2rem;
+            color: #7a1f70;
             text-decoration: none;
-            margin: 0 1.5em;
-            padding: 0.5em 0;
-            text-transform: uppercase;
-            font-weight: 600;
-            transition: color 0.3s ease-in-out;
+            font-size: 1.2em;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
         }
-
         nav a:hover {
-            color: #8a2e8e;
-        }
-
-        .menu-toggle {
-            display: none;
-            flex-direction: column;
-            cursor: pointer;
-        }
-
-        .menu-toggle div {
-            width: 30px;
-            height: 4px;
-            margin: 4px 0;
-            background-color: #5a265f;
-            transition: 0.3s;
-        }
-
-        main {
-            padding: 4em 2em 2em;
-            margin-top: 60px;
-        }
-
-        section {
-            margin: 2em auto;
-            padding: 2em;
-            background-color: #fff;
-            border-radius: 12px;
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-            max-width: 800px;
-            transition: transform 0.3s;
-        }
-
-        section:hover {
-            transform: scale(1.02);
-        }
-
-        h2 {
-            color: #8a2e8e;
-            font-size: 2.2rem;
-            animation: slideIn 1s ease-out;
-        }
-
-        p {
-            font-size: 1.2rem;
-            line-height: 1.8;
-            color: #333;
-            animation: fadeIn 2s ease-in-out 2s;
-        }
-
-        footer {
-            text-align: center;
-            background-color: #f2d6eb;
-            padding: 1em 0;
-            margin-top: 2em;
-            animation: fadeIn 2s ease-in-out 3s;
-        }
-
-        footer p {
-            color: #8a2e8e;
-            font-size: 1.2rem;
-        }
-
-        .section-title {
-            background-color: #e0b7d6;
-            padding: 1em;
-            border-radius: 5px;
-            margin-bottom: 1em;
-            font-weight: bold;
-            text-transform: uppercase;
-            text-align: center;
-        }
-
-        .cta-button {
-            background-color: #8a2e8e;
-            color: white;
-            padding: 1em 2em;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 1.2rem;
-            display: inline-block;
-            margin-top: 1em;
-            transition: background-color 0.3s;
-        }
-
-        .cta-button:hover {
             background-color: #7a1f70;
+            color: #fff;
+            transform: scale(1.05);
+        }
+        .cta-button {
+            background-color: #7a1f70;
+            color: #fff;
+            padding: 15px 30px;
+            border-radius: 25px;
+            font-size: 1.1em;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #9e3570;
+            transform: scale(1.05);
         }
 
-        @keyframes fadeIn {
-            0% { opacity: 0; }
-            100% { opacity: 1; }
-        }
-
-        @keyframes slideIn {
-            0% { transform: translateX(-100%); }
-            100% { transform: translateX(0); }
-        }
-
+        /* Meniu mobil */
         @media (max-width: 768px) {
-            .nav-links {
+            nav {
                 display: none;
-                width: 100%;
                 flex-direction: column;
-                text-align: center;
+                gap: 0.5em;
+                align-items: flex-start;
+                padding: 1em;
             }
-
-            nav a {
-                margin: 1em 0;
-            }
-
-            .menu-toggle {
+            nav.active {
                 display: flex;
             }
-
-            .nav-links.active {
-                display: flex;
+            .menu-icon {
+                display: block;
+                cursor: pointer;
             }
+            .menu-icon div {
+                width: 25px;
+                height: 3px;
+                background-color: #7a1f70;
+                margin: 4px 0;
+            }
+        }
+
+        /* Efecte animare */
+        .in-view {
+            opacity: 1;
+            transform: translateY(0);
+            transition: all 1s ease-in-out;
+        }
+        section {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        /* Stiluri pentru focus */
+        a:focus, button:focus {
+            outline: 3px solid #8a2e8e;
+            background-color: #f2d6eb;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Pisicile - Prietenii Noștri Blănoși</h1>
+        <div class="logo">Pisici</div>
+        <nav>
+            <a href="#section1">Rolul Pisicii</a>
+            <a href="#section2">Istoria Pisicilor</a>
+            <a href="#section3">Rase de Pisici</a>
+            <a href="#section4">Creșterea Pisicilor</a>
+            <a href="#section5">Alimentația Pisicilor</a>
+            <a href="#section6">Probleme de Sănătate</a>
+        </nav>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
     </header>
-    <nav>
-        <div class="menu-toggle" id="menu-toggle">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-        <div class="nav-links" id="nav-links">
-            <a href="#rolul-pisicii">Rolul Pisicii</a>
-            <a href="#istoria-pisicilor">Istoria Pisicilor</a>
-            <a href="#rase-de-pisici">Rase de Pisici</a>
-            <a href="#cresterea-pisicilor">Creșterea Pisicilor</a>
-            <a href="#alimentatia-pisicilor">Alimentația Pisicilor</a>
-            <a href="#probleme-de-sanatate">Probleme de Sănătate</a>
-        </div>
-    </nav>
-    <main>
-        <section id="rolul-pisicii">
-            <h2 class="section-title">Rolul Pisicii în Familie</h2>
-            <p>Pisicile sunt animale independente, dar totodată foarte iubitoare. Ele își găsesc adesea locuri confortabile pentru a dormi, dar se atașează profund de stăpânii lor. De asemenea, pisicile au un impact semnificativ asupra sănătății mentale, reducând stresul și anxietatea. Prin jocurile lor haioase și momentele de afecțiune, pisicile aduc un plus de bucurie în viața oricărei familii. În plus, prezența lor în casă poate ajuta la menținerea unui mediu calm și echilibrat.</p>
-        </section>
-        <section id="istoria-pisicilor">
-            <h2 class="section-title">Istoria Pisicilor</h2>
-            <p>Pisicile au fost primele animale domestice din Egiptul Antic, unde erau venerate ca zei. De-a lungul istoriei, au jucat un rol esențial în gospodării, ajutând la controlul rozătoarelor. Pisicile au evoluat și au fost îngrijite de-a lungul secolelor, iar astăzi sunt apreciate în întreaga lume ca animale de companie iubite. În diferite culturi, pisicile au simbolizat protecția, norocul și chiar spiritualitatea.</p>
-        </section>
-        <section id="rase-de-pisici">
-            <h2 class="section-title">Rase de Pisici</h2>
-            <p>Există o diversitate de rase de pisici, fiecare cu trăsături fizice și comportamentale specifice. De exemplu, rasa Siameză se remarcă prin ochii ei mari și albastri, în timp ce Maine Coon este renumită pentru dimensiunile sale mari și caracterul său prietenos. Alte rase populare includ Persana, cu blana sa lungă și mătăsoasă, și Sphynx-ul, pisica fără păr, care atrage atenția prin aspectul său unic și personalitatea jucăușă.</p>
-        </section>
-        <section id="cresterea-pisicilor">
-            <h2 class="section-title">Creșterea Pisicilor</h2>
-            <p>Creșterea unei pisici presupune multă responsabilitate. Pisicile au nevoie de un mediu sigur și stimulativ pentru a fi fericite. Este important să le oferi hrană de calitate, un loc liniștit pentru a dormi și jucării care să le stimuleze mintea. De asemenea, socializarea timpurie și vizitele la veterinar sunt esențiale pentru ca pisica să fie sănătoasă și echilibrată.</p>
-        </section>
-        <section id="alimentatia-pisicilor">
-            <h2 class="section-title">Alimentația Pisicilor</h2>
-            <p>Alimentația adecvată este crucială pentru sănătatea pisicii tale. Având în vedere că pisicile sunt carnivore obligate, ele trebuie să consume o dietă bazată pe proteine de înaltă calitate. Mâncarea pentru pisici ar trebui să fie bogată în vitamine, minerale și taurina, un aminoacid esențial pentru sănătatea lor. Evitarea alimentelor nesănătoase și asigurarea unei diete echilibrate contribuie la prevenirea bolilor și la menținerea pisicii în formă maximă.</p>
-        </section>
-        <section id="probleme-de-sanatate">
-            <h2 class="section-title">Probleme de Sănătate</h2>
-            <p>Ca orice alt animal, pisicile pot întâmpina probleme de sănătate. Bolile renale, infecțiile tractului urinar și obezitatea sunt frecvente în rândul pisicilor domestice. De asemenea, pisicile pot dezvolta alergii sau boli cronice, cum ar fi diabetul. Este important să monitorizezi comportamentul pisicii tale și să o duci periodic la veterinar pentru un control general.</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 - Toate Drepturile Rezervate | <a href="#">Politica de Confidențialitate</a></p>
-    </footer>
+
+    <section id="section1">
+        <h2>Rolul Pisicii în Familie</h2>
+        <p>Pisicile au fost considerate pe parcursul istoriei un simbol al misterului și al eleganței. Ele joacă un rol important în multe familii, oferind companie, dragoste și o prezență reconfortantă. Pisicile sunt animale de companie care pot oferi o legătură emoțională puternică, având un comportament calm și independent, dar totodată jucăușe și afectuoase. Fie că sunt observatori liniștiți sau se joacă cu mingea, pisicile aduc un echilibru în familie și pot ajuta la reducerea stresului și anxietății. Mulți consideră că pisicile au o energie pozitivă care îmbunătățește starea de bine a celor din jur.</p>
+    </section>
+
+    <section id="section2">
+        <h2>Istoria Pisicilor</h2>
+        <p>Pisicile domestice (Felis catus) au o istorie îndelungată, care datează de mii de ani. Primele dovezi ale domesticirii pisicilor provin din Egiptul Antic, unde acestea erau venerate ca animale sacre, iar în multe culturi, pisicile aveau rolul de a proteja recoltele de rozătoare. Pisicile s-au adaptat rapid vieții alături de oameni și au fost apreciate pentru abilitatea lor de a păstra curățenia prin vânătoarea de șoareci. De-a lungul timpului, pisicile au fost folosite în diverse roluri, de la animale de pază la companionii regilor și nobilii medievali. Astăzi, pisicile sunt printre cele mai populare animale de companie din lume.</p>
+    </section>
+
+    <section id="section3">
+        <h2>Rase de Pisici</h2>
+        <p>Există multe rase de pisici, fiecare cu trăsături unice și personalități distincte. Unele dintre cele mai populare rase includ Pisica Persană, cunoscută pentru blana sa lungă și fața plată, Pisica Maine Coon, o rasă mare și prietenoasă, și Pisica Siamese, celebră pentru ochii săi albaștri și corpul subțire. Fiecare rasă are caracteristici speciale, de la tipul de blană până la temperamentul lor. În funcție de stilul de viață al fiecărei persoane, există o rasă de pisică potrivită pentru fiecare locuință și familie.</p>
+    </section>
+
+    <section id="section4">
+        <h2>Creșterea Pisicilor</h2>
+        <p>Creșterea pisicilor presupune o serie de responsabilități. Este esențial să asigurăm pisicilor un mediu sigur, confortabil și stimulant. Acestea au nevoie de un loc confortabil pentru a se odihni, jucării pentru a-și canaliza energia și o hrană adecvată vârstei și nevoilor lor. Pisicile sunt foarte independente, dar au nevoie de atenție și grijă din partea stăpânilor pentru a se dezvolta corect. Vizitele regulate la veterinar, vaccinările și tratamentele împotriva paraziților sunt, de asemenea, importante pentru sănătatea lor.</p>
+    </section>
+
+    <section id="section5">
+        <h2>Alimentația Pisicilor</h2>
+        <p>Alimentația pisicilor este un aspect crucial al îngrijirii lor. Pisicile sunt animale carnivore, ceea ce înseamnă că dieta lor trebuie să conțină o cantitate mare de proteine din carne. Hrana pentru pisici se poate găsi sub formă de conserve, hrană uscată sau hrană proaspătă, dar este important să fie echilibrată și să includă toate vitaminele și mineralele necesare. De asemenea, pisicile trebuie să aibă apă proaspătă la dispoziție în permanență, pentru a preveni problemele de sănătate ale rinichilor.</p>
+    </section>
+
+    <section id="section6">
+        <h2>Probleme de Sănătate</h2>
+        <p>Pisicile pot întâmpina o serie de probleme de sănătate, care variază de la afecțiuni comune, cum ar fi infecțiile urinare sau problemele de piele, până la boli mai grave, cum ar fi diabetul sau problemele renale. De aceea, este important ca pisicile să fie monitorizate constant și să fie duse la veterinar pentru controale periodice. O dietă echilibrată, mișcarea regulată și menținerea unui mediu curat și sigur sunt esențiale pentru prevenirea multor probleme de sănătate.</p>
+    </section>
 
     <script>
-        const menuToggle = document.getElementById('menu-toggle');
-        const navLinks = document.getElementById('nav-links');
+        // Funcția pentru meniu mobil
+        function toggleMenu() {
+            const nav = document.querySelector('nav');
+            nav.classList.toggle('active');
+        }
 
-        menuToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
+        // Funcția pentru animația la scroll
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(function(section) {
+                if (isElementInViewport(section)) {
+                    section.classList.add('in-view');
+                }
+            });
         });
+
+        function isElementInViewport(el) {
+            const rect = el.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
     </script>
 </body>
 </html>
