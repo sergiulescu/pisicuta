@@ -4,19 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pisicile - Prietenii Noștri Blănoși</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Comic Sans MS', 'Chalkboard SE', sans-serif;
-            background-color: #fef6fb;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9e9f4;
             color: #5a265f;
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+            background-image: url('https://www.transparenttextures.com/patterns/paper.png'), url('https://cdn.pixabay.com/photo/2017/08/30/02/01/kitty-2690425_960_720.jpg');
+            background-size: cover, 50%;
+            background-position: center, bottom left;
         }
 
         header {
             background-color: #f2d6eb;
             text-align: center;
-            padding: 2em 0;
+            padding: 3em 0;
             border-bottom: 4px solid #e0b7d6;
         }
 
@@ -24,12 +29,19 @@
             color: #8a2e8e;
             font-size: 3rem;
             margin: 0;
+            animation: fadeIn 2s ease-in-out;
         }
 
         nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #e7c4e1;
             text-align: center;
             padding: 1em 0;
-            background-color: #e7c4e1;
+            z-index: 1000;
+            animation: fadeIn 2s ease-in-out 1s;
         }
 
         nav a {
@@ -37,6 +49,7 @@
             font-size: 1.2rem;
             text-decoration: none;
             margin: 0 1em;
+            transition: color 0.3s;
         }
 
         nav a:hover {
@@ -44,27 +57,35 @@
         }
 
         main {
-            padding: 2em;
+            padding: 4em 2em 2em;
+            margin-top: 60px;
         }
 
         section {
             margin: 2em auto;
             padding: 2em;
             background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
             max-width: 800px;
+            transition: transform 0.3s;
+        }
+
+        section:hover {
+            transform: scale(1.02);
         }
 
         h2 {
             color: #8a2e8e;
-            font-size: 2rem;
+            font-size: 2.2rem;
+            animation: slideIn 1s ease-out;
         }
 
         p {
             font-size: 1.2rem;
             line-height: 1.8;
             color: #333;
+            animation: fadeIn 2s ease-in-out 2s;
         }
 
         footer {
@@ -72,6 +93,7 @@
             background-color: #f2d6eb;
             padding: 1em 0;
             margin-top: 2em;
+            animation: fadeIn 2s ease-in-out 3s;
         }
 
         footer p {
@@ -85,6 +107,8 @@
             border-radius: 5px;
             margin-bottom: 1em;
             font-weight: bold;
+            text-transform: uppercase;
+            text-align: center;
         }
 
         .cta-button {
@@ -96,10 +120,21 @@
             font-size: 1.2rem;
             display: inline-block;
             margin-top: 1em;
+            transition: background-color 0.3s;
         }
 
         .cta-button:hover {
             background-color: #7a1f70;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(0); }
         }
     </style>
 </head>
@@ -118,27 +153,27 @@
     <main>
         <section id="rolul-pisicii">
             <h2 class="section-title">Rolul Pisicii în Familie</h2>
-            <p>Pisicile sunt mai mult decât simple animale de companie; ele sunt adevărați membri ai familiei, capabile să aducă o mulțime de beneficii emoționale. Fiind animale foarte independente, pisicile pot fi ușor îngrijite, dar sunt extrem de afectuoase când vine vorba de interacțiuni. Ele ajută la reducerea stresului și îmbunătățesc starea de bine a stăpânilor lor prin compania lor calmantă și jucăușă. De asemenea, pisicile sunt excelente pentru copii, deoarece învață lecții importante despre responsabilitate și grijă.</p>
+            <p>Pisicile sunt animale independente, dar totodată foarte iubitoare. Ele își găsesc adesea locuri confortabile pentru a dormi, dar se atașează profund de stăpânii lor. De asemenea, pisicile au un impact semnificativ asupra sănătății mentale, reducând stresul și anxietatea. Prin jocurile lor haioase și momentele de afecțiune, pisicile aduc un plus de bucurie în viața oricărei familii. În plus, prezența lor în casă poate ajuta la menținerea unui mediu calm și echilibrat.</p>
         </section>
         <section id="istoria-pisicilor">
             <h2 class="section-title">Istoria Pisicilor</h2>
-            <p>Pisicile au o istorie de mii de ani, fiind domesticate în Egiptul Antic, unde erau venerate ca simboluri sacre. În ciuda faptului că au fost un simbol de protecție pentru gospodării și grânare, pisicile au ajuns să fie apreciate și ca animale de companie în aproape fiecare cultură. De-a lungul secolelor, pisicile au devenit tot mai prezente în casele oamenilor și astăzi sunt un simbol al confortului și al blândeții în multe culturi din întreaga lume.</p>
+            <p>Pisicile au fost primele animale domestice din Egiptul Antic, unde erau venerate ca zei. De-a lungul istoriei, au jucat un rol esențial în gospodării, ajutând la controlul rozătoarelor. Pisicile au evoluat și au fost îngrijite de-a lungul secolelor, iar astăzi sunt apreciate în întreaga lume ca animale de companie iubite. În diferite culturi, pisicile au simbolizat protecția, norocul și chiar spiritualitatea.</p>
         </section>
         <section id="rase-de-pisici">
             <h2 class="section-title">Rase de Pisici</h2>
-            <p>Există multe rase de pisici, fiecare cu trăsături fizice și personalități distincte. Printre cele mai populare se numără Siameza, cunoscută pentru ochii săi albastri strălucitori, și Maine Coon, una dintre cele mai mari rase de pisici, cu o personalitate prietenoasă și un caracter adaptabil. Rasele precum Persana și Sphynx sunt, de asemenea, foarte iubite, având fiecare caracteristici unice care le fac ideale pentru anumite medii sau familii.</p>
+            <p>Există o diversitate de rase de pisici, fiecare cu trăsături fizice și comportamentale specifice. De exemplu, rasa Siameză se remarcă prin ochii ei mari și albastri, în timp ce Maine Coon este renumită pentru dimensiunile sale mari și caracterul său prietenos. Alte rase populare includ Persana, cu blana sa lungă și mătăsoasă, și Sphynx-ul, pisica fără păr, care atrage atenția prin aspectul său unic și personalitatea jucăușă.</p>
         </section>
         <section id="cresterea-pisicilor">
             <h2 class="section-title">Creșterea Pisicilor</h2>
-            <p>Creșterea unei pisici presupune o atenție deosebită, inclusiv asigurarea unui mediu sigur, sănătos și stimulativ pentru animalul tău. Este important să le oferi hrană de calitate, să le asiguri un spațiu confortabil și să le încurajezi activitățile fizice și mentale. Socializarea timpurie este esențială pentru ca pisica să devină un membru echilibrat al familiei, iar vizitele la veterinar sunt necesare pentru menținerea sănătății acesteia.</p>
+            <p>Creșterea unei pisici presupune multă responsabilitate. Pisicile au nevoie de un mediu sigur și stimulativ pentru a fi fericite. Este important să le oferi hrană de calitate, un loc liniștit pentru a dormi și jucării care să le stimuleze mintea. De asemenea, socializarea timpurie și vizitele la veterinar sunt esențiale pentru ca pisica să fie sănătoasă și echilibrată.</p>
         </section>
         <section id="alimentatia-pisicilor">
             <h2 class="section-title">Alimentația Pisicilor</h2>
-            <p>Pisicile sunt carnivore, iar o dietă echilibrată este esențială pentru sănătatea lor. Acestea au nevoie de proteine de înaltă calitate și alți nutrienți pentru a se menține sănătoase și active. Alimentația corectă contribuie la prevenirea unor afecțiuni grave, iar o dietă special adaptată vârstei și stilului lor de viață poate face o mare diferență în longevitatea și sănătatea pisicii tale.</p>
+            <p>Alimentația adecvată este crucială pentru sănătatea pisicii tale. Având în vedere că pisicile sunt carnivore obligate, ele trebuie să consume o dietă bazată pe proteine de înaltă calitate. Mâncarea pentru pisici ar trebui să fie bogată în vitamine, minerale și taurina, un aminoacid esențial pentru sănătatea lor. Evitarea alimentelor nesănătoase și asigurarea unei diete echilibrate contribuie la prevenirea bolilor și la menținerea pisicii în formă maximă.</p>
         </section>
         <section id="probleme-de-sanatate">
             <h2 class="section-title">Probleme de Sănătate</h2>
-            <p>Chiar dacă sunt animale rezistente, pisicile pot suferi de o varietate de afecțiuni, cum ar fi bolile renale, diabetul și problemele de greutate. Monitorizarea semnelor de boală, cum ar fi schimbările de comportament sau de apetit, este esențială pentru menținerea sănătății lor. De asemenea, vizitele regulate la veterinar și o dietă adecvată pot contribui semnificativ la prevenirea multor probleme de sănătate.</p>
+            <p>Ca orice alt animal, pisicile pot întâmpina probleme de sănătate. Bolile renale, infecțiile tractului urinar și obezitatea sunt frecvente în rândul pisicilor domestice. De asemenea, pisicile pot dezvolta alergii sau boli cronice, cum ar fi diabetul. Este important să monitorizezi comportamentul pisicii tale și să o duci periodic la veterinar pentru un control general.</p>
         </section>
     </main>
     <footer>
