@@ -1,117 +1,268 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<html style="font-size: 16px;" lang="ro-RO"><head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>POPCAT</title>
-    <link rel="shortcut icon" type="image/jpg" href="favicon.ico"/>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" integrity="sha512-Cv93isQdFwaKBV+Z4X8kaVBYWHST58Xb/jVOcV9aRsGSArZsgAnFIhMpDoMDcFNoUtday1hdjn0nGp3+KZyyFw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-</head>
-<body onload="startCount()">
-    <div class="container">
-        <h1>POPCAT</h1>
-        <p id="score">0</p>
-        <img src="popcat1.png" alt="Invalid" id="popcat1" height="600px">
-        <div class="tabs">
-            <div class="tab">
-               <input type="checkbox" id="chck1">
-               <label class="tab-label" for="chck1">
-                <i class="fas fa-trophy" style="color: gold; margin: 0px 10px 0px 10px; margin-left: -25px;
-                margin-right: 30px;"></i>
-                #1 <span class="flag-icon flag-icon-hk" style="margin: 0px 10px 0px 10px;"></span>120.3B &nbsp;
-                LeaderBoard &nbsp; <span class="flag-icon flag-icon-my" style="margin: 0px 10px 0px 10px;"></span>
-                <span id="my_score">10000</span>
-                </label>
-
-               <div class="tab-content">
-                    <table id="table">
-                        <tr class="bordered" id="somerow">
-                            <td></td>
-                            <td><i class="fa fa-globe" style="color: blue;"></i></td>
-                            <td>WorldWide</td>
-                            <td id="wide_score">455,615,518,558</td>
-                        </tr>
-                        <tr class="bordered">
-                            <td><i class='fas fa-medal' style="color: gold;"></i></td>
-                            <td><span class="flag-icon flag-icon-hk"></span></td>
-                            <td>Hong Kong</td>
-                            <td id="wide_score">19</td>
-                        </tr>
-                        <tr class="bordered"> 
-                            <td><i class='fas fa-medal' style="color: silver;"></i></td>
-                            <td><span class="flag-icon flag-icon-tw"></span></td>
-                            <td>Taiwan</td>
-                            <td id="wide_score">14</td>
-                        </tr>
-                        <tr class="bordered">
-                            <td><i class='fas fa-medal' style="color: brown;"></i></td>
-                            <td><span class="flag-icon flag-icon-th"></span></td>
-                            <td>Thailand</td>
-                            <td id="wide_score">13</td>
-                        </tr>
-                        <tr class="bordered">
-                            <td>4</td>
-                            <td><span class="flag-icon flag-icon-jp"></span></td>
-                            <td>Japan</td>
-                            <td id="wide_score">11</td>
-                        </tr>
-                        <tr class="bordered">
-                            <td>5</td>
-                            <td><span class="flag-icon flag-icon-my"></span></td>
-                            <td><b>Malaysia</b></td>
-                            <td id="wide_score">10000</td>
-                        </tr>
-                        <tr class="bordered">
-                            <td>6</td>
-                            <td><span class="flag-icon flag-icon-fi"></span></td>
-                            <td>Finland</td>
-                            <td id="wide_score">17</td>
-                        </tr>
-                        <tr class="bordered">
-                            <td>7</td>
-                            <td><span class="flag-icon flag-icon-se"></span></td>
-                            <td>Sweden</td>
-                            <td id="wide_score">13</td>
-                        </tr>
-                        <tr class="bordered">
-                            <td>8</td>
-                            <td><span class="flag-icon flag-icon-pl"></span></td>
-                            <td>Poland</td>
-                            <td id="wide_score">14</td>
-                        </tr>
-                        <tr class="bordered">
-                            <td>9</td>
-                            <td><span class="flag-icon flag-icon-dk"></span></td>
-                            <td>Denmark</td>
-                            <td id="wide_score">18</td>
-                        </tr>
-                        <tr class="bordered">
-                            <td>10</td>
-                            <td><span class="flag-icon flag-icon-id"></span></td>
-                            <td>Indonesia</td>
-                            <td id="wide_score">12</td>
-                        </tr>
-                        <tr class="bordered">
-                            <td>11</td>
-                            <td><span class="flag-icon flag-icon-hu"></span></td>
-                            <td>Hungary</td>
-                            <td id="wide_score">11</td>
-                        </tr>
-                        <tr class="bordered">
-                            <td>12</td>
-                            <td><span class="flag-icon flag-icon-rs"></span></td>
-                            <td>Serbia</td>
-                            <td id="wide_score">11</td>
-                        </tr>
-                    </table>
-               </div>
-
+    <meta charset="utf-8">
+    <meta name="keywords" content="Tips for Keeping Your Cat Healthy, The Mysterious World of Cats Unveiled, Adopting a Cat: What You Should Know, Understanding Your Cat&amp;apos;s Body Language">
+    <meta name="description" content="Pisicuta.ro este locul perfect pentru iubitorii de pisici! Află totul despre îngrijirea pisicilor, informații despre rase, sănătatea felinelor și sfaturi de la experți veterinari. Explorează articole utile, idei de jocuri și activități pentru pisica ta, și descoperă cele mai bune produse și accesorii pentru prietenul tău blănos. Pisicuta.ro - tot ce ai nevoie pentru o viață fericită alături de pisica ta!
+">
+    <title>Acasa</title>
+    <link rel="stylesheet" href="nicepage.css" media="screen">
+<link rel="stylesheet" href="index.css" media="screen">
+    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    <meta name="generator" content="Nicepage 7.1.0, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i|Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Playball:400">
+    
+    
+    
+    
+    
+    
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "Site2"
+}</script>
+    <meta name="theme-color" content="#313789">
+    <meta property="og:title" content="Acasa">
+    <meta property="og:description" content="Pisicuta.ro este locul perfect pentru iubitorii de pisici! Află totul despre îngrijirea pisicilor, informații despre rase, sănătatea felinelor și sfaturi de la experți veterinari. Explorează articole utile, idei de jocuri și activități pentru pisica ta, și descoperă cele mai bune produse și accesorii pentru prietenul tău blănos. Pisicuta.ro - tot ce ai nevoie pentru o viață fericită alături de pisica ta!
+">
+    <meta property="og:type" content="website">
+  <meta name="title" content="Pisicuta.ro - Totul despre pisici">
+<meta name="description" content="Pisicuta.ro este destinația perfectă pentru iubitorii de pisici. Află sfaturi utile, informații despre rase, sănătatea și comportamentul pisicilor.">
+<meta name="keywords" content="pisici, îngrijire pisici, rase de pisici, sănătatea pisicilor, pisicuta.ro, hrană pisici, adopție pisici, sfaturi veterinare">
+<meta name="author" content="Pisicuta.ro">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow">
+<meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
+  <body data-home-page="Acasa.html" data-home-page-title="Acasa" data-path-to-root="./" data-include-products="false" class="u-body u-overlap u-overlap-contrast u-overlap-transparent u-xl-mode" data-lang="en"><header class="u-black u-clearfix u-header u-sticky u-sticky-6b09 u-header" id="sec-7c58"><div class="u-clearfix u-sheet u-sheet-1">
+        <nav class="u-menu u-menu-one-level u-offcanvas u-menu-1">
+          <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px; font-weight: 700;">
+            <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-hamburger-link u-nav-link u-text-active-custom-color-4 u-text-hover-palette-2-base" href="#">
+              <svg class="u-svg-link" viewBox="0 0 24 24"><use xlink:href="#menu-hamburger"></use></svg>
+              <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+</g></svg>
+            </a>
+          </div>
+          <div class="u-custom-menu u-nav-container">
+            <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-custom-color-4 u-text-hover-palette-2-base" style="padding: 10px 20px;">Acasa</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-custom-color-4 u-text-hover-palette-2-base" href="Despre.html" style="padding: 10px 20px;">Despre</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-custom-color-4 u-text-hover-palette-2-base" style="padding: 10px 20px;">Alimentatie pisici</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-custom-color-4 u-text-hover-palette-2-base" style="padding: 10px 20px;">Crestere pisici</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-custom-color-4 u-text-hover-palette-2-base" style="padding: 10px 20px;">Sanate pisici</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-custom-color-4 u-text-hover-palette-2-base" href="Contact.html" style="padding: 10px 20px;">Contact</a>
+</li></ul>
+          </div>
+          <div class="u-custom-menu u-nav-container-collapse">
+            <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+              <div class="u-inner-container-layout u-sidenav-overflow">
+                <div class="u-menu-close"></div>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link">Acasa</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Despre.html">Despre</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Alimentatie pisici</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Crestere pisici</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Sanate pisici</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Contact.html">Contact</a>
+</li></ul>
+              </div>
             </div>
-         </div>
-    </div>
-</body>
-</html>
+            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+          </div>
+        </nav>
+        <div class="u-clearfix u-group-elements u-group-elements-1">
+          <span class="u-file-icon u-flip-horizontal u-icon u-text-custom-color-5 u-icon-1">
+            <img src="images/6197271-19064d27.png" alt="">
+          </span>
+          <p class="u-custom-font u-text u-text-1">.ro </p>
+          <p class="u-custom-font u-text u-text-2">Pisicuta</p>
+        </div>
+      </div><style class="u-sticky-style" data-style-id="6b09">.u-sticky-fixed.u-sticky-6b09:before, .u-body.u-sticky-fixed .u-sticky-6b09:before {
+borders: top right bottom left !important; border-color: #404040 !important; border-width: 2px !important
+}</style></header>
+    <section class="u-align-right u-clearfix u-container-align-right u-custom-color-2 u-image lazyload u-section-1" id="carousel_31de" data-image-width="1080" data-image-height="1620" data-bg="url(&quot;images/photo-1698170923464-e46a80163f0c.jpeg&quot;)">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h5 class="u-text u-text-body-alt-color u-text-1"> lucruri fascinante&nbsp;<br>despre prietenii noștri feline
+        </h5>
+        <h1 class="u-align-right u-text u-text-body-alt-color u-text-2"> Sfaturi<br>&nbsp;pentru&nbsp;<br>a-ți&nbsp;menține&nbsp;<br>pisica sănătoasă
+        </h1>
+      </div>
+    </section>
+    <section class="u-align-center u-clearfix u-container-align-center u-palette-5-light-2 u-section-2" id="carousel_dcf7">
+      <h2 class="u-align-center u-text u-text-default u-text-1"> Lumea misterioasă&nbsp;<br>a pisicilor este dezvăluită
+      </h2>
+      <p class="u-align-center u-text u-text-2"> Pisicile sunt animale de companie populare cunoscute pentru independența, agilitatea și natura lor jucăușă acasă.</p>
+      <div class="u-expanded-width u-palette-5-base u-shape u-shape-rectangle u-shape-1"></div>
+      <div class="data-layout-selected u-clearfix u-gutter-26 u-layout-wrap u-layout-wrap-1">
+        <div class="u-gutter-0 u-layout">
+          <div class="u-layout-row">
+            <div class="u-size-20 u-size-30-md">
+              <div class="u-layout-col">
+                <div class="u-align-center u-container-align-center u-container-style u-layout-cell u-radius-20 u-shape-round u-size-30 u-white u-layout-cell-1">
+                  <div class="u-container-layout u-container-layout-1">
+                    <img class="u-expanded-width u-image u-image-round u-radius-10 lazyload u-image-1" data-image-width="1380" data-image-height="915" data-src="images/jhhj.jpg">
+                    <h4 class="u-text u-text-default u-text-3"> Fermecătorul Tabby</h4>
+                    <p class="u-text u-text-4"> Pisicile sunt animale independente și curioase, care sunt mari însoțitori. Au personalități unice și pot fi afectuoși și jucăuși cu proprietarii lor.</p>
+                  </div>
+                </div>
+                <div class="u-container-style u-hidden-xs u-layout-cell u-size-30 u-layout-cell-2">
+                  <div class="u-container-layout u-container-layout-2"></div>
+                </div>
+              </div>
+            </div>
+            <div class="u-size-20 u-size-30-md">
+              <div class="u-layout-col">
+                <div class="u-container-style u-hidden-xs u-layout-cell u-size-20 u-layout-cell-3">
+                  <div class="u-container-layout u-container-layout-3"></div>
+                </div>
+                <div class="u-align-center u-container-align-center u-container-style u-layout-cell u-radius-20 u-shape-round u-size-20 u-white u-layout-cell-4">
+                  <div class="u-container-layout u-container-layout-4">
+                    <img class="u-expanded-width u-image u-image-round u-radius-10 lazyload u-image-2" data-image-width="1380" data-image-height="915" data-src="images/hjhj.jpg">
+                    <h4 class="u-text u-text-default u-text-5"> Feline elegante</h4>
+                    <p class="u-text u-text-6"> Mulți oameni sunt atrași de pisici din cauza naturii lor de întreținere redusă și a capacității de a se menține curați. Pisicile oferă, de asemenea, confort și sprijin emoțional stăpânilor lor.</p>
+                  </div>
+                </div>
+                <div class="u-container-style u-hidden-xs u-layout-cell u-size-20 u-layout-cell-5">
+                  <div class="u-container-layout u-container-layout-5"></div>
+                </div>
+              </div>
+            </div>
+            <div class="u-size-20 u-size-60-md">
+              <div class="u-layout-col">
+                <div class="u-container-style u-hidden-xs u-layout-cell u-size-30 u-layout-cell-6">
+                  <div class="u-container-layout u-container-layout-6"></div>
+                </div>
+                <div class="u-align-center u-container-align-center u-container-style u-layout-cell u-radius-20 u-shape-round u-size-30 u-white u-layout-cell-7">
+                  <div class="u-container-layout u-container-layout-7">
+                    <img class="u-expanded-width u-image u-image-round u-radius-15 lazyload u-image-3" data-image-width="1380" data-image-height="918" data-src="images/2323.jpg">
+                    <h4 class="u-text u-text-default u-text-7"> Miau-uri răutăcioase</h4>
+                    <p class="u-text u-text-8"> Este important să înțelegeți nevoile și preferințele unei pisici pentru a asigura o relație fericită și sănătoasă. Controalele veterinare regulate, o alimentație bună și dragostea sunt esențiale pentru bunăstarea lor.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="u-align-center u-text u-text-default u-text-9"></p>
+      <div class="u-expanded-width u-hidden-xs u-palette-5-light-2 u-shape u-shape-rectangle u-shape-2"></div>
+    </section>
+    <section class="u-clearfix u-palette-5-light-3 u-section-3" id="sec-5b8c">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <img class="u-expanded-width-xs u-image u-image-round u-radius-20 lazyload u-image-1" alt="" data-image-width="1380" data-image-height="921" data-src="images/51b70c74-b452-5494-cd8f-3e69c7c52380.jpg">
+        <div class="u-align-left u-container-align-left u-container-style u-expanded-width-xs u-group u-palette-5-dark-3 u-radius-20 u-shape-round u-group-1">
+          <div class="u-container-layout u-container-layout-1">
+            <h4 class="u-align-left u-custom-font u-text u-text-default u-text-font u-text-1"> Pantere elegante</h4>
+            <h2 class="u-align-left u-text u-text-2"> Adoptarea unei pisici: ce ar trebui să știți</h2>
+          </div>
+        </div>
+        <div class="u-align-left u-container-align-left u-container-style u-expanded-width-xs u-group u-radius-20 u-shape-round u-white u-group-2">
+          <div class="u-container-layout u-valign-middle u-container-layout-2">
+            <h3 class="u-align-left u-text u-text-3"> Explorarea comportamentului pisicilor domestice</h3>
+            <ol class="u-align-left u-text u-text-4">
+              <li> Oferă o mulțime de companie umană.</li>
+              <li>Oferiți mese regulate, adecvate, cu o aprovizionare constantă cu apă proaspătă.</li>
+              <li>Asigurați un pat curat și confortabil.</li>
+              <li>Oferiți pisicii acces în aer liber sau pregătiți-vă să goliți și să curățați o tavă de așternut zilnic.</li>
+            </ol>
+            <a href="https://www.glamour.com/gallery/summer-17-fashion-trends-at-target" class="u-active-palette-5-light-1 u-align-left u-border-none u-btn u-btn-round u-button-style u-hover-palette-5-light-1 u-palette-5-base u-radius-20 u-btn-1" target="_blank">read more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-container-align-center u-palette-5-base u-section-4" id="carousel_8887">
+      <div class="u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-expanded-width u-palette-5-light-3 u-shape u-shape-rectangle u-shape-1"></div>
+      <div class="data-layout-selected u-clearfix u-gutter-30 u-layout-wrap u-layout-wrap-1">
+        <div class="u-gutter-0 u-layout">
+          <div class="u-layout-col">
+            <div class="u-size-30">
+              <div class="u-layout-row">
+                <div class="u-container-style u-image u-image-round u-layout-cell u-radius-35 u-size-30 lazyload u-image-1" data-image-width="900" data-image-height="900" data-bg="url(&quot;images/ffff-min1.jpg&quot;)">
+                  <div class="u-container-layout u-container-layout-1"></div>
+                </div>
+                <div class="u-container-style u-image u-image-round u-layout-cell u-radius-30 u-size-30 lazyload u-image-2" data-image-width="862" data-image-height="862" data-bg="url(&quot;images/831d810a-e45d-11cb-5a85-58903c69faba.jpg&quot;)">
+                  <div class="u-container-layout u-valign-top u-container-layout-2"></div>
+                </div>
+              </div>
+            </div>
+            <div class="u-size-30">
+              <div class="u-layout-row">
+                <div class="u-align-left u-container-align-left u-container-style u-image u-image-round u-layout-cell u-radius-30 u-size-30 lazyload u-image-3" data-image-width="862" data-image-height="1080" data-bg="url(&quot;images/16d17f42-5ef1-0abe-4606-2340daa35226.jpg&quot;)">
+                  <div class="u-container-layout u-container-layout-3"></div>
+                </div>
+                <div class="u-align-left u-container-align-left u-container-style u-layout-cell u-radius-30 u-size-30 u-white u-layout-cell-4">
+                  <div class="u-container-layout u-valign-middle u-container-layout-4">
+                    <h3 class="u-text u-text-default u-text-1"> Cum să creați un mediu sigur pentru pisici</h3>
+                    <p class="u-custom-font u-text u-text-font u-text-2"> Pisicile sunt animale independente și curioase, care sunt mari însoțitori. Au personalități unice și pot fi afectuoși și jucăuși cu proprietarii lor.</p>
+                    <p class="u-custom-font u-text u-text-font u-text-3"></p>
+                    <a href="#" class="u-active-palette-5-light-1 u-align-left u-btn u-btn-round u-button-style u-custom u-hover-palette-5-light-1 u-palette-5-base u-radius-20 u-btn-1" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="">read more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-align-center u-clearfix u-container-align-center u-palette-5-light-3 u-section-5" id="carousel_4e59">
+      <div class="u-expanded-width u-palette-5-base u-shape u-shape-rectangle u-shape-1"></div>
+      <img class="u-image u-image-round u-radius-20 lazyload u-image-1" data-image-width="720" data-image-height="1080" data-src="images/ghgh.jpg">
+      <div class="u-list u-list-1">
+        <div class="u-repeater u-repeater-1">
+          <div class="u-align-left u-container-align-left u-container-style u-list-item u-radius-20 u-repeater-item u-shape-round u-white u-list-item-1">
+            <div class="u-container-layout u-similar-container u-container-layout-1">
+              <h4 class="u-text u-text-palette-5-base u-text-1"> Feline jucăușe</h4>
+              <p class="u-text u-text-2"> Pisicile sunt animale de companie populare cunoscute pentru independența, agilitatea și natura lor jucăușă acasă.</p>
+              <a href="#" class="u-border-1 u-border-active-palette-5-base u-border-black u-border-hover-palette-5-base u-border-no-left u-border-no-right u-border-no-top u-btn u-button-style u-none u-btn-1">more</a>
+            </div>
+          </div>
+          <div class="u-align-left u-container-align-left u-container-style u-list-item u-radius-20 u-repeater-item u-shape-round u-video-cover u-white u-list-item-2">
+            <div class="u-container-layout u-similar-container u-container-layout-2">
+              <h4 class="u-text u-text-palette-5-base u-text-3"> Însoțitori drăgălași</h4>
+              <p class="u-text u-text-4"> Sunt vânători pricepuți, cu abilități ascuțite de miros, auz și vedere pe timp de noapte.</p>
+              <a href="#" class="u-border-1 u-border-active-palette-5-base u-border-black u-border-hover-palette-5-base u-border-no-left u-border-no-right u-border-no-top u-btn u-button-style u-none u-btn-2">more</a>
+            </div>
+          </div>
+          <div class="u-align-left u-container-align-left u-container-style u-list-item u-radius-20 u-repeater-item u-shape-round u-video-cover u-white u-list-item-3">
+            <div class="u-container-layout u-similar-container u-container-layout-3">
+              <h4 class="u-text u-text-palette-5-base u-text-5">companiomi perfecti</h4>
+              <p class="u-text u-text-6"> Pisicile au rase diverse, fiecare cu caracteristici unice, cum ar fi mărimea, culoarea blanii și comportamentul.</p>
+              <a href="#" class="u-border-1 u-border-active-palette-5-base u-border-black u-border-hover-palette-5-base u-border-no-left u-border-no-right u-border-no-top u-btn u-button-style u-none u-btn-3">more</a>
+            </div>
+          </div>
+          <div class="u-align-left u-container-align-left u-container-style u-list-item u-radius-20 u-repeater-item u-shape-round u-video-cover u-white u-list-item-4">
+            <div class="u-container-layout u-similar-container u-container-layout-4">
+              <h4 class="u-text u-text-palette-5-base u-text-7"> Pisici adorabile</h4>
+              <p class="u-text u-text-8"> Acești însoțitori feline necesită îngrijire adecvată, inclusiv dietă nutritivă, îngrijire regulată și controale veterinare.</p>
+              <a href="#" class="u-border-1 u-border-active-palette-5-base u-border-black u-border-hover-palette-5-base u-border-no-left u-border-no-right u-border-no-top u-btn u-button-style u-none u-btn-4">more</a>
+            </div>
+          </div>
+          <div class="u-align-left u-container-align-left u-container-style u-list-item u-radius-20 u-repeater-item u-shape-round u-video-cover u-white u-list-item-5">
+            <div class="u-container-layout u-similar-container u-container-layout-5">
+              <h4 class="u-text u-text-palette-5-base u-text-9"> Prieteni cu blană</h4>
+              <p class="u-text u-text-10"> Mulți oameni găsesc bucurie în compania pisicilor, apreciind prezența lor afectuoasă și liniștitoare.</p>
+              <a href="#" class="u-border-1 u-border-active-palette-5-base u-border-black u-border-hover-palette-5-base u-border-no-left u-border-no-right u-border-no-top u-btn u-button-style u-none u-btn-5">more</a>
+            </div>
+          </div>
+          <div class="u-align-left u-container-align-left u-container-style u-list-item u-radius-20 u-repeater-item u-shape-round u-video-cover u-white u-list-item-6">
+            <div class="u-container-layout u-similar-container u-container-layout-6">
+              <h4 class="u-text u-text-palette-5-base u-text-11"> Pisicile grațioase</h4>
+              <p class="u-text u-text-12"> Indiferent dacă stau la soare sau urmăresc o jucărie, pisicile aduc căldură și confort caselor.</p>
+              <a href="#" class="u-border-1 u-border-active-palette-5-base u-border-black u-border-hover-palette-5-base u-border-no-left u-border-no-right u-border-no-top u-btn u-button-style u-none u-btn-6">more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="u-align-center-xs u-align-left-lg u-align-left-md u-align-left-sm u-align-left-xl u-text u-text-13"></p>
+    </section>
+    
+    
+    
+    
+    <footer class="u-align-center u-clearfix u-container-align-center u-footer u-grey-80 u-footer" id="sec-6010"><div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-small-text u-text u-text-variant u-text-1">pisicuta.ro </p>
+      </div></footer>
+  
+</body></html>
